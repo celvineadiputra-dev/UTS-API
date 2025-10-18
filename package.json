@@ -1,0 +1,21 @@
+{
+	"name": "uts-if31",
+	"packageManager": "yarn@4.9.2",
+	"scripts": {
+		"drizzle:push": "npx drizzle-kit push",
+		"format": "yarn exec biome check --write"
+	},
+	"dependencies": {
+		"dotenv": "^17.2.3",
+		"drizzle-orm": "^0.44.6",
+		"fastify": "^5.6.1",
+		"postgres": "^3.4.7",
+		"zod": "^4.1.12"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.6",
+		"drizzle-kit": "^0.31.5",
+		"tsx": "^4.20.6"
+	},
+	"type": "module"
+}
