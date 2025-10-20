@@ -6,6 +6,7 @@
 		"format": "yarn exec biome check --write"
 	},
 	"dependencies": {
+		"@fastify/cors": "^11.1.0",
 		"dotenv": "^17.2.3",
 		"drizzle-orm": "^0.44.6",
 		"fastify": "^5.6.1",

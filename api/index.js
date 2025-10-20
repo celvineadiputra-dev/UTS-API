@@ -1,9 +1,13 @@
+import cors from "@fastify/cors";
 import Fastify from "fastify";
 import { books, storeBook } from "./controllers/bookController.js";
 import ApiResponse from "./utils/api-response.js";
 
 const app = Fastify({
 	logger: true,
+});
+await app.register(cors, {
+	origin: true
 });
 
 app.get("/", async (_, reply) => {
