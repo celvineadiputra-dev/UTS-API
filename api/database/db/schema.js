@@ -4,7 +4,7 @@ export const booksTable = pgTable("books", {
 	id: integer().primaryKey().generatedAlwaysAsIdentity(),
 	title: varchar({ length: 255 }).notNull(),
 	author: varchar({ length: 255 }).notNull(),
-	published_year: integer().notNull(),
+	published_year: varchar({ length: 255 }).notNull(),
 	created_at: timestamp().defaultNow(),
 	updated_at: timestamp().defaultNow(),
 });
